@@ -1,9 +1,12 @@
-import React from 'react'
+import Header from "../../components"
 
-export const index = () => {
+const Torrents = () => {
   return (
     <div>
+      <Header />
         <h1>Torrents</h1>
     </div>
   )
 }
+
+export default Torrents

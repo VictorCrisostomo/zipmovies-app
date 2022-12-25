@@ -1,9 +1,12 @@
-import React from 'react'
+import Header from "../../components"
 
-export const index = () => {
+const Cursos = () => {
   return (
     <div>
+      <Header />
         <h1>Cursos</h1>
     </div>
   )
 }
+
+export default Cursos

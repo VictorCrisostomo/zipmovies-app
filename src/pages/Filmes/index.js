@@ -1,9 +1,12 @@
-import React from 'react'
+import Header from '../../components'
 
-export const index = () => {
+const Filmes = () => {
   return (
     <div>
+      <Header />
         <h1>Filmes</h1>
     </div>
   )
 }
+
+export default Filmes

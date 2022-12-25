@@ -1,9 +1,12 @@
-import React from 'react'
+import Header from "../../components"
 
-export const index = () => {
+const Series = () => {
   return (
     <div>
+      <Header/>
         <h1>Séries</h1>
     </div>
   )
 }
+
+export default Series
