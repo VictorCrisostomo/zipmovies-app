@@ -1,7 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import './App.css';
+import "./styles/main.css"
+// Components
+import Navbar from './components/Navbar';
 
+// Pages
 import Home from './pages/Home'
 import Filmes from './pages/Filmes'
 import Series from './pages/Series'
@@ -10,11 +13,15 @@ import Colecoes from './pages/Colecoes'
 import Pedidos from './pages/Pedidos'
 import Cursos from './pages/Cursos'
 import Torrents from './pages/Torrents'
+import React from 'react';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <React.Fragment>
+          <Navbar/>
+        </React.Fragment>
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/filmes" element={<Filmes />}/>
