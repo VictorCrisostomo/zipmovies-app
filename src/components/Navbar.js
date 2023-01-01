@@ -14,14 +14,39 @@ const Navbar = () => {
     <header>
       <h3>ZIP Movies</h3>
         <nav ref={navRef}>
-          <Link to="/">Início</Link>
-          <Link to="/filmes">Filmes</Link>
-          <Link to="/series">Séries</Link>
-          <Link to="/lancamentos">Lançamentos</Link>
-          <Link to="/colecoes">Coleções</Link>
+
+          <button className="btn-link" onClick={showNavbar}>
+            <Link to="/">Início</Link>
+          </button>
+
+          <button className="btn-link" onClick={showNavbar}>
+            <Link to="/filmes">Filmes</Link>
+          </button>
+
+          <button className="btn-link" onClick={showNavbar}>
+            <Link to="/series">Séries</Link>
+          </button>
+
+          <button className="btn-link" onClick={showNavbar}>
+            <Link to="/lancamentos">Lançamentos</Link>
+          </button>
+
+          <button className="btn-link" onClick={showNavbar}>
+            <Link to="/colecoes">Coleções</Link>
+          </button>
+
+          <button className="btn-link" onClick={showNavbar}>
           <Link to="/Pedidos">Pedidos</Link>
-          <Link to="/torrents">Torrents</Link>
-          <Link to="/cursos">Cursos</Link>
+          </button>
+
+          <button className="btn-link" onClick={showNavbar}>
+            <Link to="/torrents">Torrents</Link>
+          </button>
+
+          <button className="btn-link" onClick={showNavbar}>
+            <Link to="/cursos">Cursos</Link>
+          </button>
+
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
           </button>

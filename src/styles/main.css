@@ -33,6 +33,11 @@ header {
     color: var(--mainColorLight);
 }
 
+nav .btn-link {
+    background-color: transparent;
+    border: none;
+}
+
 nav a {
     margin: 0 1rem;
     color: var(--mainColorLight);
