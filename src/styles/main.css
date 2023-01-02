@@ -23,6 +23,8 @@ body {
     background-color: var(--mainColor);
 }
 
+/* NAVBAR */
+
 header {
     display: flex;
     align-items: center;
@@ -62,7 +64,30 @@ header .nav-btn{
     font-size: 1.5rem;
 }
 
+/* TITLES */
+.main-title {
+    margin-top: 1.5em;
+    font-family: 'Bebas Neue', cursive;
+
+    color: var(--mainColorLight);
+
+    display: flex;
+    justify-content: center;
+}
+
+.secondary-title{
+    margin-top: 1.5em;
+
+    color: var(--mainColorLight);
+
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 1024px) {
+
+    /* NAVBAR */
+
     header .nav-btn{
         visibility: visible;
         opacity: 1;

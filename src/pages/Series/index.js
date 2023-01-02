@@ -2,7 +2,8 @@
 const Series = () => {
   return (
     <div>
-        <h1>Séries</h1>
+        <h2 className="secondary-title">Séries</h2>
+        <p className="secondary-title">Em breve...</p>
     </div>
   )
 }

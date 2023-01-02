@@ -2,7 +2,8 @@
 const Pedidos = () => {
   return (
     <div>
-        <h1>Pedidos</h1>
+        <h2 className="secondary-title">Pedidos</h2>
+        <p className="secondary-title">Em breve...</p>
     </div>
   )
 }

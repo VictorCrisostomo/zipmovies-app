@@ -2,7 +2,8 @@
 const Torrents = () => {
   return (
     <div>
-        <h1>Torrents</h1>
+        <h2 className="secondary-title">Torrents</h2>
+        <p className="secondary-title">Em breve...</p>
     </div>
   )
 }

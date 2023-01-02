@@ -2,7 +2,8 @@
 const Colecoes = () => {
   return (
     <div>
-        <h1>Coleções</h1>
+        <h2 className="secondary-title">Coleções</h2>
+        <p className="secondary-title">Em breve...</p>
     </div>
   )
 }

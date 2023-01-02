@@ -2,7 +2,7 @@
 const Home = () => {
   return (
     <div>
-        <h1>Início</h1>
+        <h2 className="main-title">Seu site de filmes e séries online</h2>
     </div>
   )
 }
