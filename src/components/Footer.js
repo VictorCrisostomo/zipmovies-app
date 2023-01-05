@@ -4,10 +4,17 @@ const Footer = () => {
   return (
     <footer>
         <div className="container-footer">
-            <p>Descubra</p>
-            <hr />
-
+          <div className="cards-footer">
+            <h1>LINKS</h1>
+          </div>
+          <div className="cards-footer">
+            <h1>GRUPO</h1>
+          </div>
+          <div className="cards-footer">
+            <h1>LOGO</h1>
+          </div>
         </div>
+        <div className="extra-footer"></div>
     </footer>
   )
 }

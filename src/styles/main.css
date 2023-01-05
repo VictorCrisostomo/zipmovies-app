@@ -118,10 +118,36 @@ header .nav-btn{
     height: 12em;
     border-radius: 10px;
     background-color: #FD7014;
+    color: var(--mainColorLight);
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 2.5em;
+}
+.container-footer{
+    background-color: var(--mainHoverColor);
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards-footer{
+    margin: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--mainColorLight);
+
+    height: 100px;
+    flex: 1 0 200px;
+}
+.extra-footer {
+    height: 50px;
 }
 @media only screen and (max-width: 1024px) {
 
