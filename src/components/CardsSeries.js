@@ -1,38 +1,38 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-const CardsFilmes = () => {
+const CardsSeries = () => {
   return (
     <section className='carousel-container'>
             <div className="carousel-header">
-            <h3>Filmes</h3>
-            <Link className='carousel-links' to="/filmes">+ Ver mais</Link>
+            <h3>Séries</h3>
+            <Link className='carousel-links' to="/series">+ Ver mais</Link>
             </div>
 
         <div className='carousel'>
             <article className='card'>
                 <div className="film-bg">
-                    <h1>FILMES</h1>
+                    <h1>SÉRIES</h1>
                 </div>
             </article>
             <article className='card'>
                 <div className="film-bg">
-                    <h1>FILMES</h1>
+                    <h1>SÉRIES</h1>
                 </div>
             </article>
             <article className='card'>
                 <div className="film-bg">
-                    <h1>FILMES</h1>
+                    <h1>SÉRIES</h1>
                 </div>
             </article>
             <article className='card'>
                 <div className="film-bg">
-                    <h1>FILMES</h1>
+                    <h1>SÉRIES</h1>
                 </div>
             </article>
             <article className='card'>
                 <div className="film-bg">
-                    <h1>FILMES</h1>
+                    <h1>SÉRIES</h1>
                 </div>
             </article>
         </div>
@@ -41,4 +41,4 @@ const CardsFilmes = () => {
   )
 }
 
-export default CardsFilmes
+export default CardsSeries
