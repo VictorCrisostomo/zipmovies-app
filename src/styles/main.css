@@ -90,7 +90,7 @@ header .nav-btn{
 
 /* filmes */
 .carousel-container{
-    margin: 0 1em 0 1em;
+    margin: 1.5em 1em 0 1em;
     display: grid;
     gap: .5em;
 }
