@@ -1,9 +1,12 @@
+import CardsFilmes from "../../components/CardsFilmes";
 
 const Home = () => {
   return (
-    <div>
+    <main>
         <h2 className="main-title">Seu site de filmes e séries online</h2>
-    </div>
+
+        <CardsFilmes/>
+    </main>
   )
 }
 

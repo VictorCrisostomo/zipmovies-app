@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import "./styles/main.css"
 // Components
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 // Pages
 import Home from './pages/Home'
@@ -32,6 +33,9 @@ function App() {
           <Route path="/cursos" element={<Cursos />}/>
           <Route path="/torrents" element={<Torrents />}/>
         </Routes>
+        <React.Fragment>
+          <Footer />
+        </React.Fragment>
       </Router>
     </div>
   );
