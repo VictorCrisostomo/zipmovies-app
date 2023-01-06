@@ -17,21 +17,21 @@ const Footer = () => {
           <Link to="/torrents">Torrents</Link>
           <Link to="/cursos">Cursos</Link>
           </div>
-          <hr />
+          <div className="line-footer"></div>
           <div className="cards-footer">
             <p>Gostaria de ser avisado em primeira mão quando adicionarmos novos títulos ou lançamentos do cinema?</p>
             <button className='btn-footer'>
               Entrar no grupo
             </button>
           </div>
-          <hr />
+          <div className="line-footer"></div>
           <div className="cards-footer">
-            <h3>ZIP Movies</h3>
             <div className="icons-footer">
               <FaInstagram className='a-icons' />
               <FaFacebookSquare className='a-icons' />
               <FaTwitter className='a-icons' />            
             </div>
+            <h3>ZIP Movies</h3>
           </div>
         </div>
         <div className="extra-footer"></div>
