@@ -35,6 +35,31 @@ const CardsFilmes = () => {
                     <h1>FILMES</h1>
                 </div>
             </article>
+            <article className='card'>
+                <div className="film-bg">
+                    <h1>FILMES</h1>
+                </div>
+            </article>
+            <article className='card'>
+                <div className="film-bg">
+                    <h1>FILMES</h1>
+                </div>
+            </article>
+            <article className='card'>
+                <div className="film-bg">
+                    <h1>FILMES</h1>
+                </div>
+            </article>
+            <article className='card'>
+                <div className="film-bg">
+                    <h1>FILMES</h1>
+                </div>
+            </article>
+            <article className='card'>
+                <div className="film-bg">
+                    <h1>FILMES</h1>
+                </div>
+            </article>
         </div>
     </section>
 

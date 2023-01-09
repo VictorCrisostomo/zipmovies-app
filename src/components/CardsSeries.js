@@ -35,6 +35,31 @@ const CardsSeries = () => {
                     <h1>SÉRIES</h1>
                 </div>
             </article>
+            <article className='card'>
+                <div className="film-bg">
+                    <h1>SÉRIES</h1>
+                </div>
+            </article>
+            <article className='card'>
+                <div className="film-bg">
+                    <h1>SÉRIES</h1>
+                </div>
+            </article>
+            <article className='card'>
+                <div className="film-bg">
+                    <h1>SÉRIES</h1>
+                </div>
+            </article>
+            <article className='card'>
+                <div className="film-bg">
+                    <h1>SÉRIES</h1>
+                </div>
+            </article>
+            <article className='card'>
+                <div className="film-bg">
+                    <h1>SÉRIES</h1>
+                </div>
+            </article>
         </div>
     </section>
 

@@ -25,6 +25,19 @@ body {
     background-color: var(--mainColor);
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--mainColor);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondaryHoverColor);
+    border-radius: 16px;
+}
+
 /* NAVBAR */
 
 header {
@@ -66,15 +79,18 @@ header .nav-btn{
     font-size: 1.5rem;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* TITLES */
 .main-title {
     margin-top: 1.5em;
     font-family: 'Bebas Neue', cursive;
 
     color: var(--mainColorLight);
-
-    display: flex;
-    justify-content: center;
 }
 
 .secondary-title{
@@ -82,18 +98,73 @@ header .nav-btn{
 
     color: var(--mainColorLight);
 
-    display: flex;
-    justify-content: center;
 }
 
 /* CAROUSELS */
 
+/* SLIDER */
+.container-slider {
+    display: flex;
+    margin-top: 2em;
+}
+.slideshow{
+    margin: auto;
+    width: 55vw;
+    aspect-ratio: calc(16/9);
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.slideshow button {
+    padding: .2em;
+    aspect-ratio: 1;
+    
+    font-size: 18px;
+    text-align: center;
+    
+    border: none;
+    border-radius: 3em;
+    
+    background-color: var(--mainColor);
+    color: var(--mainColorLight);
+    
+    cursor: pointer;
+}
+.slideshow button:hover{
+    background-color: var(--mainHoverColor);
+}
+.prev-btn {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+.next-btn {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+}
+.slides{
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+
+    object-fit: cover;
+    object-position: center;
+}
+
 /* filmes */
 .carousel-container{
+    max-width: 900px;
     margin: 1.5em 1em 0 1em;
     display: grid;
     gap: .5em;
 }
+
 .carousel-header{
     color: var(--mainColorLight);
     display: flex;
@@ -105,6 +176,7 @@ header .nav-btn{
 }
 .carousel {
     display: grid;
+    /* justify-content: center; */
     grid-auto-flow: column;
     scroll-behavior: auto;
     gap: 1.5em;
@@ -237,8 +309,11 @@ footer h3 {
         font-size: 1.5rem;
     }
 
-    .carousel {
-        justify-content: left;
+    /* CAROUSELS */
+
+    /* slider */
+    .slideshow{
+        width: 75vw;
     }
 
 }
