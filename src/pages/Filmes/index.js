@@ -1,9 +1,9 @@
+import { Link } from "react-router-dom"
 
 const Filmes = () => {
   return (
     <main>
-        <h2 className="secondary-title">Filmes</h2>
-        <p className="secondary-title">Em breve...</p>
+      <Link to="/filmes/avatar">AVATAR</Link>
     </main>
   )
 }

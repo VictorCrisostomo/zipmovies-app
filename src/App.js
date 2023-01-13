@@ -1,6 +1,7 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-
 import "./styles/main.css"
+
 // Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -14,7 +15,9 @@ import Colecoes from './pages/Colecoes'
 import Pedidos from './pages/Pedidos'
 import Cursos from './pages/Cursos'
 import Torrents from './pages/Torrents'
-import React from 'react';
+
+// Filmes
+import Avatar from "./pages/Filmes/avatar"
 
 function App() {
   return (
@@ -24,6 +27,7 @@ function App() {
           <Navbar/>
         </React.Fragment>
         <Routes>
+          {/* Pages */}
           <Route path="/" element={<Home />}/>
           <Route path="/filmes" element={<Filmes />}/>
           <Route path="/series" element={<Series />}/>
@@ -32,6 +36,9 @@ function App() {
           <Route path="/pedidos" element={<Pedidos />}/>
           <Route path="/cursos" element={<Cursos />}/>
           <Route path="/torrents" element={<Torrents />}/>
+
+          {/* Filmes */}
+          <Route path='/filmes/avatar' element={<Avatar />}/>
         </Routes>
         <React.Fragment>
           <Footer />
