@@ -10,56 +10,71 @@ const CardsFilmes = () => {
             </div>
 
         <div className='carousel'>
+            <Link to="/filmes/avatar">
+                <article className='card'>
+                    <div className="film-bg" style={{
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundImage: 'url(https://imgur.com/jAwTcTj.jpg)'
+                    }}>
+                    </div>
+                </article>
+            </Link>
+
             <article className='card'>
                 <div className="film-bg">
                     <h1>FILMES</h1>
                 </div>
             </article>
+
             <article className='card'>
                 <div className="film-bg">
                     <h1>FILMES</h1>
                 </div>
             </article>
+
             <article className='card'>
                 <div className="film-bg">
                     <h1>FILMES</h1>
                 </div>
             </article>
+
             <article className='card'>
                 <div className="film-bg">
                     <h1>FILMES</h1>
                 </div>
             </article>
+
             <article className='card'>
                 <div className="film-bg">
                     <h1>FILMES</h1>
                 </div>
             </article>
+
             <article className='card'>
                 <div className="film-bg">
                     <h1>FILMES</h1>
                 </div>
             </article>
+
             <article className='card'>
                 <div className="film-bg">
                     <h1>FILMES</h1>
                 </div>
             </article>
+
             <article className='card'>
                 <div className="film-bg">
                     <h1>FILMES</h1>
                 </div>
             </article>
+
             <article className='card'>
                 <div className="film-bg">
                     <h1>FILMES</h1>
                 </div>
             </article>
-            <article className='card'>
-                <div className="film-bg">
-                    <h1>FILMES</h1>
-                </div>
-            </article>
+            
         </div>
     </section>
 

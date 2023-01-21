@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <h3>ZIP Movies</h3>
+      <Link to="/"><h3>ZIP Movies</h3></Link>
         <nav ref={navRef}>
 
           <button className="btn-link" onClick={showNavbar}>

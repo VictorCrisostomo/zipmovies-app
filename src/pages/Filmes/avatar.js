@@ -1,4 +1,5 @@
 import React from 'react'
+import CardsFilmes from "../../components/CardsFilmes";
 
 import { FaRegPlayCircle, FaInstagram , FaFacebookSquare, FaTwitter, FaWhatsapp} from "react-icons/fa"
 import { MdDownload } from "react-icons/md";
@@ -42,6 +43,11 @@ const avatar = () => {
           <button className='btn-down'><MdDownload /> Baixar torrent</button>
         </a>
       </div>
+
+      <br />
+      <br />
+
+      <CardsFilmes/>
 
     </main>
   )

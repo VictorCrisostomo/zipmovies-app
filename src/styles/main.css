@@ -49,6 +49,10 @@ header {
     background-color: var(--secondaryColor);
     color: var(--mainColorLight);
 }
+header a {
+    text-decoration: none;
+    color: var(--mainColorLight);
+}
 
 nav .btn-link {
     background-color: transparent;
