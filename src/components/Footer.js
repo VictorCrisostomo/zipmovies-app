@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           <div className="line-footer"></div>
           <div className="cards-footer">
-            <div className="icons-footer">
+            <div className="icons-group">
               <FaInstagram className='a-icons' />
               <FaFacebookSquare className='a-icons' />
               <FaTwitter className='a-icons' />            

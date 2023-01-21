@@ -198,6 +198,79 @@ main {
     justify-content: center;
 }
 
+/* Pages */
+
+/* FILMES */
+.film-header {
+    width: 100%;
+    aspect-ratio: 32/9;
+}
+.film--horizontal {
+    background: linear-gradient(45deg, var(--secondaryColor) 15%, transparent 55%, var(--colorBlue) 100%);
+}
+.film--vertical {
+    background: linear-gradient(to top, var(--mainColor), transparent);
+}
+.infos {
+    padding: 2.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.img-poster img {
+    width: 20vw;
+    border-radius: 12px;
+    box-shadow: -7px 6px 13px 3px rgb(0 0 0 / 40%)
+}
+.text-infos{
+    color: var(--mainColorLight);
+    text-shadow: #222 1.2px 1.2px
+}
+.btns-play-down {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+
+    margin-top: -5.5em;
+    margin-right: 3em;
+}
+.btns-play-down a {
+    text-decoration: none;
+}
+.btn-play {
+    background-color: var(--mainColorLight);
+    color: var(--mainColor);
+
+    font-weight: 600;
+    font-size: 12pt;
+    padding: .7em 4em .7em 4em;
+
+    border: none;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    gap: .3em;
+}
+.btn-down {
+    background-color: var(--colorBlue);
+    color: var(--mainColorLight);
+
+    font-weight: 600;
+    font-size: 12pt;
+    padding: .7em 4em .7em 4em;
+
+    border: none;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    gap: .3em;
+}
 /* FOOTER */
 footer{
     margin-top: 2.5em;
@@ -254,10 +327,15 @@ footer p {
 .btn-footer:focus {
     box-shadow: none;
 }
-.icons-footer {
+.icons-group {
+    margin-top: .5em;
     margin-bottom: .5em;
     display: flex;
     gap: 1em;
+}
+.a-icons {
+    width: 1.5em;
+    height: 1.5em;
 }
 footer h3 {
     color: var(--secondaryColor);
@@ -317,6 +395,15 @@ footer h3 {
         width: 80vw;
     }
 
+    .btns-play-down {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+
+        margin-left: auto;
+        margin-top: -2em;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -368,5 +455,23 @@ footer h3 {
     /* slider */
     .slideshow{
         width: 90vw;
+    }
+
+    .btns-play-down {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5em;
+
+        margin: 0;
+
+        justify-content: center;
+    }
+    .btn-play, .btn-down {
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
