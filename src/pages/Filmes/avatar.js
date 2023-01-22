@@ -19,7 +19,7 @@ const avatar = () => {
                 <img src="https://imgur.com/jAwTcTj.jpg" alt="1" />
               </div>
               <div className="text-infos">
-                <h2>Avatar</h2>
+                <h4>Avatar</h4>
                   <br />
                 <p>Um homem se aventura em um mundo exótico que ele aprende a chamar de lar e luta para protegê-lo.</p>
                   <br />
