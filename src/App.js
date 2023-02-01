@@ -18,6 +18,8 @@ import Torrents from './pages/Torrents'
 
 // Filmes
 import Avatar from "./pages/Filmes/avatar"
+import AGuerraDoAmanha from "./pages/Filmes/a-guerra-do-amanha"
+import BemVindaaQuixeramobim from "./pages/Filmes/Bem-vinda-a-quixeramobim"
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
 
           {/* Filmes */}
           <Route path='/filmes/avatar' element={<Avatar />}/>
+          <Route path='/filmes/a-guerra-do-amanha' element={<AGuerraDoAmanha />}/>
+          <Route path='/filmes/bem-vinda-a-quixeramobim' element={<BemVindaaQuixeramobim />}/>
         </Routes>
         <React.Fragment>
           <Footer />

@@ -14,9 +14,9 @@ const avatar = () => {
   return (
     <main>
 
-      <BannerScreen filme = {FilmesDB.filmes[0]} />
+      <BannerScreen filme = {FilmesDB.filmes[3]} />
 
-      <BtnsActions filme = {FilmesDB.filmes[0]} />
+      <BtnsActions filme = {FilmesDB.filmes[3]} />
 
       <br />
       <br />

@@ -6,17 +6,13 @@ import BannerScreen from '../../components/BannerScreen';
 
 import BtnsActions from '../../components/BtnsActions';
 
-
-
-
-
 const avatar = () => {
   return (
     <main>
 
-      <BannerScreen filme = {FilmesDB.filmes[0]} />
+      <BannerScreen filme = {FilmesDB.filmes[2]} />
 
-      <BtnsActions filme = {FilmesDB.filmes[0]} />
+      <BtnsActions filme = {FilmesDB.filmes[2]} />
 
       <br />
       <br />
