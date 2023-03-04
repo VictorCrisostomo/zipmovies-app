@@ -5,7 +5,7 @@ import BannerScreen from '../../components/BannerScreen';
 import BtnsActions from '../../components/BtnsActions';
 
 
-const BemVindaQuixeramibim = () => {
+const HomemDeFerro2 = () => {
 
   const [movieList, setMovieList] = useState([])
 
@@ -23,10 +23,10 @@ const BemVindaQuixeramibim = () => {
     <main>
 
       {movieList.map((filme, key)=>(
-        <BannerScreen key={key} filme = {filme.items.filmes[3]} />
+        <BannerScreen key={key} filme = {filme.items.filmes[6]} />
       ))}
       {movieList.map((filme, key)=>(
-        <BtnsActions key={key} filme = {filme.items.filmes[3]} />
+        <BtnsActions key={key} filme = {filme.items.filmes[6]} />
       ))}
       <br />
       <br />
@@ -36,4 +36,4 @@ const BemVindaQuixeramibim = () => {
   )
 }
 
-export default BemVindaQuixeramibim
+export default HomemDeFerro2

@@ -1,5 +1,4 @@
 import React from 'react'
-// import filmesDB from '../filmesDB/filmesDB.json'
 
 // import { FaInstagram , FaFacebookSquare, FaTwitter, FaWhatsapp} from "react-icons/fa"
 

@@ -1,9 +1,28 @@
 import React from 'react'
+// import FilmesDB from '../../FilmesDB';
 import { Link } from "react-router-dom"
 
-import FilmesDB from '../filmesDB/filmesDB.json'
-
 const CardsFilmes = () => {
+
+    // const [movieList, setMovieList] = useState([])
+    // const [backgroundImageUrl, setBackgroundImageUrl] = useState('')
+
+    // useEffect(() => {
+    //   const loadAll = async () => {
+    //     //  pull all list
+    //     let list = await fetch('https://filmes-db-rust.vercel.app/filmesDB.json');
+    //     const result = await list.json();
+    //     setMovieList(result);
+    //   }
+  
+    //   loadAll();
+    // },[]);
+
+    // const backgroundStyle = {
+    //     backgroundImage: `url(${"https://zip-images.vercel.app"+backgroundImageUrl.filmes[0].images.poster})`,
+    //     backgroundSize: 'cover',
+    //     backgroundPosition: 'center',
+    // }
   return (
     <section className='carousel-container'>
             <div className="carousel-header">
@@ -17,7 +36,7 @@ const CardsFilmes = () => {
                     <div className="film-bg" style={{
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
-                        backgroundImage: `url(${"https://zip-images.vercel.app"+FilmesDB.filmes[0].images.poster})`
+                        backgroundImage: `url(https://zip-images.vercel.app/posts/fe2iqdht_o.jpg)`
                     }}>
                     </div>
                 </article>
@@ -28,7 +47,7 @@ const CardsFilmes = () => {
                     <div className="film-bg" style={{
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
-                                backgroundImage: `url(${"https://zip-images.vercel.app"+FilmesDB.filmes[2].images.poster})`
+                                backgroundImage: `url(https://zip-images.vercel.app/posts/zISnryDj_o.jpg)`
                             }}>
                     </div>
                 </article>
@@ -39,74 +58,88 @@ const CardsFilmes = () => {
                     <div className="film-bg" style={{
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
-                            backgroundImage: `url(${"https://zip-images.vercel.app"+FilmesDB.filmes[3].images.poster})`
+                            backgroundImage: `url(https://zip-images.vercel.app/posts/Q7oE0e3U_o.jpg)`
                         }}>
                     </div>
                 </article>
             </Link>
             
-            <article className='card'>
-            <div className="film-bg" style={{
+            <Link to="/filmes/os-4-malfeitores">
+                <article className='card'>
+                    <div className="film-bg" style={{
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
-                        backgroundImage: `url(${"https://zip-images.vercel.app"+FilmesDB.filmes[4].images.poster})`
-                    }}>
+                        backgroundImage: `url(https://zip-images.vercel.app/posts/uqydfajL_o.jpg)`
+                        }}>
                     </div>
-            </article>
+                </article>
+            </Link>
 
-            <article className='card'>
-            <div className="film-bg" style={{
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundImage: `url(${"https://zip-images.vercel.app"+FilmesDB.filmes[5].images.poster})`
-                    }}>
+            <Link to="/filmes/homem-de-ferro">
+                <article className='card'>
+                    <div className="film-bg" style={{
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundImage: `url(https://zip-images.vercel.app/posts/g2CYt4v2_o.jpg)`
+                        }}>
                     </div>
-            </article>
+                </article>
+            </Link>
 
-            <article className='card'>
-            <div className="film-bg" style={{
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundImage: `url(${"https://zip-images.vercel.app"+FilmesDB.filmes[6].images.poster})`
-                    }}>
+            <Link to="/filmes/homem-de-ferro-2">
+                <article className='card'>
+                    <div className="film-bg" style={{
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundImage: `url(https://zip-images.vercel.app/posts/D4Vda737_o.jpg)`
+                        }}>
                     </div>
-            </article>
+                </article>
+            </Link>
+            
+            <Link to="/filmes/homem-de-ferro-3">
+                <article className='card'>
+                    <div className="film-bg" style={{
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundImage: `url(https://zip-images.vercel.app/posts/HmUCNkMl_o.jpg)`
+                        }}>
+                    </div>
+                </article>
+            </Link>
 
-            <article className='card'>
-            <div className="film-bg" style={{
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundImage: `url(${"https://zip-images.vercel.app"+FilmesDB.filmes[7].images.poster})`
-                    }}>
+            <Link to="/filmes/capitao-america">
+                <article className='card'>
+                    <div className="film-bg" style={{
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundImage: `url(https://zip-images.vercel.app/posts/CWeOsrJo_o.jpg)`
+                        }}>
                     </div>
-            </article>
+                </article>
+            </Link>
 
-            <article className='card'>
-            <div className="film-bg" style={{
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundImage: `url(${"https://zip-images.vercel.app"+FilmesDB.filmes[8].images.poster})`
-                    }}>
+            <Link to="/filmes/capitao-america-2">
+                <article className='card'>
+                    <div className="film-bg" style={{
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundImage: `url(https://zip-images.vercel.app/posts/72qTEL1V_o.jpg)`
+                        }}>
                     </div>
-            </article>
+                </article>
+            </Link>
 
-            <article className='card'>
-            <div className="film-bg" style={{
+            <Link to="/filmes/capitao-america-3">
+                <article className='card'>
+                    <div className="film-bg" style={{
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
-                        backgroundImage: `url(${"https://zip-images.vercel.app"+FilmesDB.filmes[9].images.poster})`
+                        backgroundImage: `url(https://zip-images.vercel.app/posts/pPdhq1Yk_o.jpg)`
                     }}>
                     </div>
-            </article>
-
-            <article className='card'>
-            <div className="film-bg" style={{
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundImage: `url(${"https://zip-images.vercel.app"+FilmesDB.filmes[10].images.poster})`
-                    }}>
-                    </div>
-            </article>
+                </article>
+            </Link>
             
         </div>
     </section>

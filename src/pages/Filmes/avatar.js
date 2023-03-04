@@ -1,30 +1,39 @@
-import React from 'react'
-import FilmesDB from '../../filmesDB/filmesDB.json'
+import React, { useEffect, useState} from 'react'
+import FilmesDB from '../../FilmesDB';
 import CardsFilmes from "../../components/CardsFilmes";
-
 import BannerScreen from '../../components/BannerScreen';
-
 import BtnsActions from '../../components/BtnsActions';
 
 
+const Avatar = () => {
 
+  const [movieList, setMovieList] = useState([])
 
+  useEffect(() => {
+    const loadAll = async () => {
+      //  pull all list
+      let list = await FilmesDB.getHomeList();
+      setMovieList(list);
+    }
 
-const avatar = () => {
+    loadAll();
+  },[]);
+
   return (
     <main>
 
-      <BannerScreen filme = {FilmesDB.filmes[0]} />
-
-      <BtnsActions filme = {FilmesDB.filmes[0]} />
-
+      {movieList.map((filme, key)=>(
+        <BannerScreen key={key} filme = {filme.items.filmes[0]} />
+      ))}
+      {movieList.map((filme, key)=>(
+        <BtnsActions key={key} filme = {filme.items.filmes[0]} />
+      ))}
       <br />
       <br />
-
       <CardsFilmes/>
 
     </main>
   )
 }
 
-export default avatar
+export default Avatar
