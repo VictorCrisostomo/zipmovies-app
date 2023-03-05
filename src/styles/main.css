@@ -217,12 +217,16 @@ main {
     width: 8em;
     height: 12em;
     border-radius: 10px;
-    background-color: #FD7014;
-    color: var(--mainColorLight);
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.film-bg img{
+    width: 8em;
+    height: 12em;
+    border-radius: 10px;
 }
 
 /* Pages */
