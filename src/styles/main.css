@@ -38,6 +38,29 @@ body {
     border-radius: 16px;
 }
 
+/* LOADING */
+.container-loading {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading{
+    width: 2em;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
 /* NAVBAR */
 
 header {
