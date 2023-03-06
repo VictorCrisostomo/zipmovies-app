@@ -28,6 +28,17 @@ const LazyHomemdeFerro3 = React.lazy(() => import ('./pages/Filmes/homem-de-ferr
 const LazyCapitaoAmerica = React.lazy(() => import ('./pages/Filmes/capitao-america'));
 const LazyCapitaoAmerica2 = React.lazy(() => import ('./pages/Filmes/capitao-america-2'));
 const LazyCapitaoAmerica3 = React.lazy(() => import ('./pages/Filmes/capitao-america-3'));
+const LazyHomemFormiga = React.lazy(() => import ('./pages/Filmes/homem-formiga'));
+const LazyHomemFormiga2 = React.lazy(() => import ('./pages/Filmes/homem-formiga-2'));
+const LazyPanteraNegra = React.lazy(() => import ('./pages/Filmes/pantera-negra'));
+const LazyGuardioesdaGalaxia = React.lazy(() => import ('./pages/Filmes/guardioes-da-galaxia'));
+const LazyGuardioesdaGalaxia2 = React.lazy(() => import ('./pages/Filmes/guardioes-da-galaxia-2'));
+const LazyTopGun = React.lazy(() => import ('./pages/Filmes/top-gun'));
+const LazyJurassicPark = React.lazy(() => import ('./pages/Filmes/jurassic-park'));
+const LazyJurassicPark2 = React.lazy(() => import ('./pages/Filmes/jurassic-park-2'));
+const LazyJurassicPark3 = React.lazy(() => import ('./pages/Filmes/jurassic-park-3'));
+const LazyJurassicWorld = React.lazy(() => import ('./pages/Filmes/jurassic-world'));
+// const LazyJurassicWorld2 = React.lazy(() => import ('./pages/Filmes/jurassic-world-2'));
 
 function App() {
   return (
@@ -128,6 +139,56 @@ function App() {
           <Route path="/filmes/capitao-america-3"
             element={<React.Suspense fallback={<Loading />}>
                 <LazyCapitaoAmerica3 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/homem-formiga"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyHomemFormiga />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/homem-formiga-2"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyHomemFormiga2 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/pantera-negra"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyPanteraNegra />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/guardioes-da-galaxia"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyGuardioesdaGalaxia />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/guardioes-da-galaxia-2"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyGuardioesdaGalaxia2 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/top-gun"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyTopGun />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/jurassic-park"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyJurassicPark />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/jurassic-park-2"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyJurassicPark2 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/jurassic-park-3"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyJurassicPark3 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/jurassic-world"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyJurassicWorld />
               </React.Suspense>
           }/>
         </Routes>

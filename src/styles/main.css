@@ -186,6 +186,10 @@ main {
 }
 
 /* filmes */
+.section-titles {
+    margin-top: 4em;
+    width: 75%;
+}
 .carousel-container{
     max-width: 900px;
     margin: 1.5em 1em 0 1em;
@@ -230,7 +234,13 @@ main {
 }
 
 /* Pages */
+.container-films{
+    display: flex;
+    flex-wrap: wrap;
 
+    gap: 1em;
+}
+ 
 /* FILMES */
 .film-header {
     width: 100%;
@@ -421,7 +431,6 @@ footer h3 {
     }
 
     /* CAROUSELS */
-
     /* slider */
     .slideshow{
         width: 80vw;
@@ -438,6 +447,12 @@ footer h3 {
 
         margin-left: auto;
         margin-top: -2em;
+    }
+
+    /* Pages */
+    .section-titles {
+        margin-top: 3em;
+        width: 90%;
     }
 
 }
@@ -514,4 +529,10 @@ footer h3 {
         align-items: center;
         justify-content: center;
     }
+
+        /* Pages */
+        .section-titles {
+            margin-top: 3em;
+            width: 85%;
+        }
 }
