@@ -17,6 +17,19 @@ const LazyPedidos = React.lazy(() => import ('./pages/Pedidos'));
 const LazyCursos = React.lazy(() => import ('./pages/Cursos'));
 const LazyTorrents = React.lazy(() => import ('./pages/Torrents'));
 
+// Coleções
+const LazyColHarrypotter = React.lazy(() => import ('./pages/Colecoes/Harry-Potter'));
+const LazyColJogosVorazes = React.lazy(() => import ('./pages/Colecoes/Jogos-vorazes'));
+const LazyColJonhWick = React.lazy(() => import ('./pages/Colecoes/Jonh-Wick'));
+const LazyColJurassicPark = React.lazy(() => import ('./pages/Colecoes/Jurassic-park'));
+const LazyColMissaoImpossivel = React.lazy(() => import ('./pages/Colecoes/Missao-impossivel'));
+const LazyColOSenhordosAneis = React.lazy(() => import ('./pages/Colecoes/O-Senhor-dos-Aneis'));
+const LazyColRockyBalboa = React.lazy(() => import ('./pages/Colecoes/Rocky-Balboa'));
+const LazyColStarWars = React.lazy(() => import ('./pages/Colecoes/Star-wars'));
+const LazyColTransformers = React.lazy(() => import ('./pages/Colecoes/Transformers'));
+const LazyColUcm = React.lazy(() => import ('./pages/Colecoes/Ucm'));
+const LazyColVelozeseFuriosos = React.lazy(() => import ('./pages/Colecoes/Velozes-e-furiosos'));
+
 // Filmes
 const LazyAvatar = React.lazy(() => import ('./pages/Filmes/avatar'));
 const LazyAGuerraDoAmanha = React.lazy(() => import ('./pages/Filmes/a-guerra-do-amanha'));
@@ -87,6 +100,63 @@ function App() {
           <Route path="/Torrents"
             element={<React.Suspense fallback={<Loading />}>
                 <LazyTorrents />
+              </React.Suspense>
+          }/>
+
+          {/* Coloções */}
+          <Route path="/colecoes/harry-potter"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyColHarrypotter />
+              </React.Suspense>
+          }/>
+          <Route path="/colecoes/jogos-vorazes"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyColJogosVorazes />
+              </React.Suspense>
+          }/>
+          <Route path="/colecoes/jonh-wick"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyColJonhWick />
+              </React.Suspense>
+          }/>
+          <Route path="/colecoes/jurassic-park"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyColJurassicPark />
+              </React.Suspense>
+          }/>
+          <Route path="/colecoes/missao-impossivel"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyColMissaoImpossivel />
+              </React.Suspense>
+          }/>
+          <Route path="/colecoes/o-senhor-dos-aneis"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyColOSenhordosAneis />
+              </React.Suspense>
+          }/>
+          <Route path="/colecoes/rocky-balboa"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyColRockyBalboa />
+              </React.Suspense>
+          }/>
+          <Route path="/colecoes/star-wars"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyColStarWars />
+              </React.Suspense>
+          }/>
+          <Route path="/colecoes/transformers"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyColTransformers />
+              </React.Suspense>
+          }/>
+          <Route path="/colecoes/ucm"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyColUcm />
+              </React.Suspense>
+          }/>
+          <Route path="/colecoes/velozes-e-furiosos"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyColVelozeseFuriosos />
               </React.Suspense>
           }/>
 

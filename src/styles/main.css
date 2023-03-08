@@ -233,6 +233,18 @@ main {
     border-radius: 10px;
 }
 
+.film-colection{
+    width: 9em;
+    height: 6em;
+    border-radius: 10px;
+
+    background-color: var(--secondaryHoverColor);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Pages */
 .container-films{
     display: flex;
@@ -533,6 +545,21 @@ footer h3 {
         /* Pages */
         .section-titles {
             margin-top: 3em;
-            width: 85%;
+            width: 90%;
         }
+        /* .film-bg{
+            width: 6em;
+            height: 10em;
+            border-radius: 10px;
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .film-bg img{
+            width: 6em;
+            height: 10em;
+            border-radius: 10px;
+        } */
 }

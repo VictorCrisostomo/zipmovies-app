@@ -1,6 +1,7 @@
+import SliderCarousel from "../../components/SliderCarousel";
 import CardsFilmes from "../../components/CardsFilmes";
 // import CardsSeries from "../../components/CardsSeries";
-import SliderCarousel from "../../components/SliderCarousel";
+import CardColections from "../../components/CardColections";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
         <SliderCarousel/>
         <CardsFilmes/>
         {/* <CardsSeries/> */}
+        <CardColections/>
     </main>
   )
 }
