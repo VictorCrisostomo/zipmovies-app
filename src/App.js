@@ -51,7 +51,12 @@ const LazyJurassicPark = React.lazy(() => import ('./pages/Filmes/jurassic-park'
 const LazyJurassicPark2 = React.lazy(() => import ('./pages/Filmes/jurassic-park-2'));
 const LazyJurassicPark3 = React.lazy(() => import ('./pages/Filmes/jurassic-park-3'));
 const LazyJurassicWorld = React.lazy(() => import ('./pages/Filmes/jurassic-world'));
-// const LazyJurassicWorld2 = React.lazy(() => import ('./pages/Filmes/jurassic-world-2'));
+const LazyJurassicWorld2 = React.lazy(() => import ('./pages/Filmes/jurassic-world-2'));
+const LazyJurassicWorld3 = React.lazy(() => import ('./pages/Filmes/jurassic-world-3'));
+const LazyDoutorEstranho2 = React.lazy(() => import ('./pages/Filmes/doutor-estranho-2'));
+const LazyAgenteOculto = React.lazy(() => import ('./pages/Filmes/agente-oculto'));
+const LazyAmordeRedencao = React.lazy(() => import ('./pages/Filmes/amor-de-redencao'));
+const LazyUncharted = React.lazy(() => import ('./pages/Filmes/uncharted'));
 
 function App() {
   return (
@@ -259,6 +264,36 @@ function App() {
           <Route path="/filmes/jurassic-world"
             element={<React.Suspense fallback={<Loading />}>
                 <LazyJurassicWorld />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/jurassic-world-2"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyJurassicWorld2 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/jurassic-world-3"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyJurassicWorld3 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/doutor-estranho-2"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyDoutorEstranho2 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/agente-oculto"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyAgenteOculto />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/amor-de-redencao"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyAmordeRedencao />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/uncharted"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyUncharted />
               </React.Suspense>
           }/>
         </Routes>
