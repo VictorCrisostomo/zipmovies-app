@@ -234,15 +234,22 @@ main {
 }
 
 .film-colection{
-    width: 9em;
+    width: 14em;
     height: 6em;
     border-radius: 10px;
 
-    background-color: var(--secondaryHoverColor);
+    /* background-color: var(--secondaryHoverColor); */
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.film-colection img{
+    width: 14em;
+    height: 6em;
+    border-radius: 10px;
+    aspect-ratio: 21/9;
 }
 
 /* Pages */
