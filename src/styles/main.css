@@ -211,16 +211,16 @@ main {
     /* justify-content: center; */
     grid-auto-flow: column;
     scroll-behavior: auto;
-    gap: 1.5em;
+    gap: .7em;
     overflow-y: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
 }
 .film-bg{
-    width: 8em;
-    height: 12em;
-    border-radius: 10px;
+    width: 6.8em;
+    height: 10.2em;
+    border-radius: 8px;
 
     display: flex;
     align-items: center;
@@ -228,9 +228,9 @@ main {
 }
 
 .film-bg img{
-    width: 8em;
-    height: 12em;
-    border-radius: 10px;
+    width: 6.8em;
+    height: 10.2em;
+    border-radius: 8px;
 }
 
 .film-colection{
@@ -256,8 +256,8 @@ main {
 .container-films{
     display: flex;
     flex-wrap: wrap;
-
-    gap: 1em;
+    justify-content: center;
+    gap: .7em;
 }
  /* teste */
 /* FILMES */
