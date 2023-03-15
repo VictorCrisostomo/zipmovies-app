@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 
 const Filmes = () => {
 
-  const imgUrl = "https://zip-images.vercel.app";
-  const [movieList, setMovieList] = useState([])
+    const imageUrl = "https://zip-images.vercel.app"
+    const [movieList, setMovieList] = useState([])
 
   useEffect(() => {
     const loadAll = async () => {
@@ -21,205 +21,206 @@ const Filmes = () => {
 
       <section className='section-titles'>
         <div className='container-films'>
-            <Link to="/filmes/avatar">
-                <article className='card'>
-                    <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[0].images.poster} alt="" />
-                        ))}
-                    </div>
-                </article>
-            </Link>
 
-            <Link to="/filmes/a-guerra-do-amanha">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[0].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[2].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[0].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/bem-vinda-a-quixeramobim">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[2].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[3].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[2].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
-            
-            <Link to="/filmes/os-4-malfeitores">
-                <article className='card'>
-                    <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[4].images.poster} alt="" />
-                        ))}
-                    </div>
-                </article>
-            </Link>
+        ))}
 
-            <Link to="/filmes/homem-de-ferro">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[3].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[5].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[3].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/homem-de-ferro-2">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[4].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[6].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[4].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
-            
-            <Link to="/filmes/homem-de-ferro-3">
-                <article className='card'>
-                    <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[7].images.poster} alt="" />
-                        ))}
-                    </div>
-                </article>
-            </Link>
+        ))}
 
-            <Link to="/filmes/capitao-america">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[5].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[8].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[5].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/capitao-america-2">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[6].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[9].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[6].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/capitao-america-3">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[7].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[10].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[7].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/homem-formiga">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[8].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[11].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[8].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/homem-formiga-2">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[9].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[12].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[9].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/pantera-negra">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[10].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[13].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[10].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/guardioes-da-galaxia">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[11].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[14].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[11].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/guardioes-da-galaxia-2">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[12].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[15].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[12].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/top-gun">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[13].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[16].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[13].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/jurassic-park">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[14].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[17].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[14].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/jurassic-park-2">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[15].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[18].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[15].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/jurassic-park-3">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[16].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[19].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[16].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
 
-            <Link to="/filmes/jurassic-world">
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[17].url.filmePage}>
                 <article className='card'>
                     <div className="film-bg">
-                        {movieList.map((movie, index) =>(
-                            <img key={index} src={imgUrl+movie.items.filmes[20].images.poster} alt="" />
-                        ))}
+                            <img key={index} src={imageUrl+movie.items.filmes[17].images.poster} alt="" />
                     </div>
                 </article>
             </Link>
+        ))}
+
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[18].url.filmePage}>
+                <article className='card'>
+                    <div className="film-bg">
+                            <img key={index} src={imageUrl+movie.items.filmes[18].images.poster} alt="" />
+                    </div>
+                </article>
+            </Link>
+        ))}
+
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[19].url.filmePage}>
+                <article className='card'>
+                    <div className="film-bg">
+                            <img key={index} src={imageUrl+movie.items.filmes[19].images.poster} alt="" />
+                    </div>
+                </article>
+            </Link>
+        ))}
+
+        {movieList.map((movie, index, key) =>(
+            <Link key={key} to={movie.items.filmes[20].url.filmePage}>
+                <article className='card'>
+                    <div className="film-bg">
+                            <img key={index} src={imageUrl+movie.items.filmes[20].images.poster} alt="" />
+                    </div>
+                </article>
+            </Link>
+        ))}
         </div>
       </section>
     </main>

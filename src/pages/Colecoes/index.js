@@ -4,6 +4,7 @@ const Colecoes = () => {
   return (
     <main>
         <h2 className="secondary-title">Coleções</h2>
+        
         <Link to="/colecoes/harry-potter">
           <p>Harry Potter</p>
         </Link>
