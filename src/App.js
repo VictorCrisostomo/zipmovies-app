@@ -57,6 +57,22 @@ const LazyDoutorEstranho2 = React.lazy(() => import ('./pages/Filmes/doutor-estr
 const LazyAgenteOculto = React.lazy(() => import ('./pages/Filmes/agente-oculto'));
 const LazyAmordeRedencao = React.lazy(() => import ('./pages/Filmes/amor-de-redencao'));
 const LazyUncharted = React.lazy(() => import ('./pages/Filmes/uncharted'));
+const LazyAdaoNegro = React.lazy(() => import ('./pages/Filmes/adao-negro'));
+const LazyJonhWick = React.lazy(() => import ('./pages/Filmes/jonh-wick'));
+const LazyJonhWick2 = React.lazy(() => import ('./pages/Filmes/jonh-wick-2'));
+const LazyJonhWick3 = React.lazy(() => import ('./pages/Filmes/jonh-wick-3'));
+const LazyDivergente = React.lazy(() => import ('./pages/Filmes/divergente'));
+const LazyDivergente2 = React.lazy(() => import ('./pages/Filmes/divergente-2'));
+const LazyDivergente3 = React.lazy(() => import ('./pages/Filmes/divergente-3'));
+const LazyMadMax = React.lazy(() => import ('./pages/Filmes/mad-max'));
+const LazyHarryPotter = React.lazy(() => import ('./pages/Filmes/harry-potter'));
+const LazyHarryPotter2 = React.lazy(() => import ('./pages/Filmes/harry-potter-2'));
+const LazyHarryPotter3 = React.lazy(() => import ('./pages/Filmes/harry-potter-3'));
+const LazyHarryPotter4 = React.lazy(() => import ('./pages/Filmes/harry-potter-4'));
+const LazyHarryPotter5 = React.lazy(() => import ('./pages/Filmes/harry-potter-5'));
+const LazyHarryPotter6 = React.lazy(() => import ('./pages/Filmes/harry-potter-6'));
+const LazyHarryPotter7 = React.lazy(() => import ('./pages/Filmes/harry-potter-7'));
+const LazyHarryPotter8 = React.lazy(() => import ('./pages/Filmes/harry-potter-8'));
 
 function App() {
   return (
@@ -294,6 +310,86 @@ function App() {
           <Route path="/filmes/uncharted"
             element={<React.Suspense fallback={<Loading />}>
                 <LazyUncharted />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/adao-negro"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyAdaoNegro />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/jonh-wick"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyJonhWick />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/jonh-wick-2"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyJonhWick2 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/jonh-wick-3"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyJonhWick3 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/divergente"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyDivergente />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/divergente-2"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyDivergente2 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/divergente-3"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyDivergente3 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/mad-max"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyMadMax />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/harry-potter"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyHarryPotter />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/harry-potter-2"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyHarryPotter2 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/harry-potter-3"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyHarryPotter3 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/harry-potter-4"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyHarryPotter4 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/harry-potter-5"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyHarryPotter5 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/harry-potter-6"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyHarryPotter6 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/harry-potter-7"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyHarryPotter7 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/harry-potter-8"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyHarryPotter8 />
               </React.Suspense>
           }/>
         </Routes>
