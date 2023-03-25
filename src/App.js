@@ -80,6 +80,12 @@ const LazyJogosVorazes4 = React.lazy(() => import ('./pages/Filmes/jogos-vorazes
 const LazyVelozesFuriosos = React.lazy(() => import ('./pages/Filmes/velozes-e-furiosos'));
 const LazyVelozesFuriosos2 = React.lazy(() => import ('./pages/Filmes/velozes-e-furiosos-2'));
 const LazyVelozesFuriosos3 = React.lazy(() => import ('./pages/Filmes/velozes-e-furiosos-3'));
+const LazyVelozesFuriosos4 = React.lazy(() => import ('./pages/Filmes/velozes-e-furiosos-4'));
+const LazyVelozesFuriosos5 = React.lazy(() => import ('./pages/Filmes/velozes-e-furiosos-5'));
+const LazyVelozesFuriosos6 = React.lazy(() => import ('./pages/Filmes/velozes-e-furiosos-6'));
+const LazyVelozesFuriosos7 = React.lazy(() => import ('./pages/Filmes/velozes-e-furiosos-7'));
+const LazyVelozesFuriosos8 = React.lazy(() => import ('./pages/Filmes/velozes-e-furiosos-8'));
+const LazyVelozesFuriosos9 = React.lazy(() => import ('./pages/Filmes/velozes-e-furiosos-9'));
 
 function App() {
   return (
@@ -432,6 +438,36 @@ function App() {
           <Route path="/filmes/velozes-e-furiozos-3"
             element={<React.Suspense fallback={<Loading />}>
                 <LazyVelozesFuriosos3 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/velozes-e-furiozos-4"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyVelozesFuriosos4 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/velozes-e-furiozos-5"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyVelozesFuriosos5 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/velozes-e-furiozos-6"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyVelozesFuriosos6 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/velozes-e-furiozos-7"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyVelozesFuriosos7 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/velozes-e-furiozos-8"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyVelozesFuriosos8 />
+              </React.Suspense>
+          }/>
+          <Route path="/filmes/velozes-e-furiozos-9"
+            element={<React.Suspense fallback={<Loading />}>
+                <LazyVelozesFuriosos9 />
               </React.Suspense>
           }/>
         </Routes>
